@@ -178,7 +178,6 @@ body
 		margin-right: 50px
 		margin-bottom: 50px
 		transition: all .3s ease
-		transform: scale(0.9)
 		&:hover
 			transform: scale(1)
 		img
@@ -328,12 +327,167 @@ body
 		margin-bottom: 50px
 .r_block,.l_block
 	width: 100%
-	max-width: 670px
+	max-width: 850px
 	margin: 0 auto
 	p
 		width: 100%
-		max-width: 120px
+		max-width: 375px
 		background-repeat: no-repeat
 		font-size: 18px
 		font-weight: 500
+		padding: 35px 0
+		text-transform: uppercase
 		display: inline-block
+		background-size: 50px
+.r_block
+	text-align: right
+	p
+		text-align: left
+		padding-left: 90px
+		background-position: 0 30px
+		margin-left: 100px
+.l_block
+	text-align: left
+	p
+		text-align: right
+		padding-right: 90px
+		background-position: 100% 30px
+.vertical_line
+	position: relative
+	&:before
+		content: ''
+		display: block
+		position: absolute
+		top: -20px
+		width: 55px
+		bottom: -20px
+		left: 50%
+		background-size: 100% 100%
+		transform: translateX(-50%)
+		background-position: center
+		background-repeat: no-repeat
+		background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAKQCAYAAADkE5gmAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4BpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDowMjgxMDlGRTM5RjhFMjExOEY1OUEyREUwMkVEQkVDNCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozRDlFN0U0QUI0MzQxMUU5OEJCMTlDMkRCRUU3ODYwMCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozRDlFN0U0OUI0MzQxMUU5OEJCMTlDMkRCRUU3ODYwMCIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxNSAoV2luZG93cykiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDoyOGI2N2RkZC0yYzU5LWUzNGUtYTE1OC0zNGI1Y2FjMjlmNDEiIHN0UmVmOmRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDpiNGI0ODIxYi1hZjIzLWZiNDEtYTI5NS0yYjY4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')
+.hamburger
+	display: none
+	position: fixed
+	width: 42px
+	height: 35px
+	right: 30px
+	cursor: pointer
+	top: 35px
+	box-sizing: border-box
+	z-index: 55555
+	span
+		display: block
+		background-color: #fff
+		height: 4px
+		width: 100%
+		position: absolute
+		top: 50%
+		margin-top: -2px
+		transition: all .3s ease
+	&:before
+		content: ''
+		display: block
+		background-color: #fff
+		height: 4px
+		width: 100%
+		position: absolute
+		top: 0
+		transition: all .3s ease
+	&:after
+		content: ''
+		display: block
+		background-color: #fff
+		height: 4px
+		width: 100%
+		position: absolute
+		bottom: 0
+		transition: all .3s ease
+	&.active
+		span
+			opacity: 0
+		&:before
+			transform: rotate(45deg)
+			top: 50%
+			margin-top: -2px
+		&:after
+			transform: rotate(-45deg)
+			top: 50%
+			margin-top: -2px
+@media screen and (max-width: 968px)
+	.hamburger
+		display: block
+	.soc_grid a
+		margin-right: 40px
+	.help_s_inner
+		max-width: 300px
+		padding-left: 60px
+	.how_item
+		width: 45%
+	.prod_species_item
+		max-width: 150px
+		margin-bottom: 30px
+	.r_block p
+		padding-left: 120px
+		background-position: 50px 30px
+		font-size: 16px
+	.l_block p
+		padding-right: 120px
+		background-position: 85% 30px
+		font-size: 16px
+	.page_nav
+		display: none
+		position: fixed
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		background-color: rgba(#000,.9)
+		&.active
+			display: block
+		ul
+			display: block
+			margin-top: 30%
+			text-align: center
+			li
+				background-color: rgba(#000,.4)
+				&:nth-child(2n)
+					background-color: transparent
+				a
+					font-size: 24px
+					color: #fff
+					font-weight: 500
+					text-transform: uppercase
+@media screen and (max-width: 568px)
+	body
+		overflow-x: hidden
+	.connect_s_header
+		font-size: 44px
+		text-align: center
+	.connect_s
+		text-align: center
+	.soc_grid
+		justify-content: flex-end
+	.soc_links_header
+		margin-top: 50px
+		font-size: 32px
+	.help_s_item,.how_item
+		width: 100%
+	.how_text
+		font-size: 16px
+	.r_block p
+		padding-left: 10px
+		background-position: 70% 30px
+		background-color: #fff
+		margin-left: 0
+		font-size: 15px
+	.l_block p
+		padding-right: 10px
+		background-position: 15% 30px
+		background-color: #fff
+		font-size: 15px
+	.page_nav ul li a
+		font-size: 18px
+	.prod_species_item
+		margin-right: 0

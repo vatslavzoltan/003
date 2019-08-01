@@ -18,8 +18,8 @@ gulp.task('browser-sync', function() {
 			baseDir: 'app'
 		},
 		notify: false,
-		// online: false, // Work offline without internet connection
-		// tunnel: true, tunnel: 'projectname', // Demonstration page: http://projectname.localtunnel.me
+		online: false, // Work offline without internet connection
+		tunnel: true, tunnel: '003', // Demonstration page: http://projectname.localtunnel.me
 	})
 });
 function bsReload(done) { browserSync.reload(); done(); };
@@ -41,7 +41,9 @@ gulp.task('styles', function() {
 // Scripts & JS Libraries
 gulp.task('scripts', function() {
 	return gulp.src([
-		// 'node_modules/jquery/dist/jquery.min.js', // Optional jQuery plug-in (npm i --save-dev jquery)
+		'node_modules/jquery/dist/jquery.min.js', // Optional jQuery plug-in (npm i --save-dev jquery)
+		'app/libs/parallax.min.js',
+		'app/libs/wow.js',
 		'app/js/_lazy.js', // JS library plug-in example
 		'app/js/_custom.js', // Custom scripts. Always at the end
 		])
